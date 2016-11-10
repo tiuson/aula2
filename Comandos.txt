@@ -1,0 +1,41 @@
+-> db.Alunos.insert ({
+... "name": "Marcelo Stefanelli Santos",
+... "birthday": ISODate("1977-07-15T19:13:00Z"),
+... "group": "Grupo 4"
+... })
+
+> db.Alunos.insert ({
+... "name": "Robert Carlos",
+... "birthday": ISODate("1980-01-01T19:13:00Z"),
+... "group": "Grupo 4"
+... })
+
+> db.Alunos.insert ({
+... "name": "Alan Carlos R. Silva",
+... "birthday": ISODate("1990-01-01T19:13:00Z"),
+... "group": "Grupo 4"
+... })
+
+> db.Alunos.insert ({
+... "name": "Gilmar Meira Freitas",
+... "birthday": ISODate("1970-01-01T19:13:00Z"),
+... "group": "Grupo 4"
+... })
+
+> db.Alunos.find().sort({a: 1}).limit(1)
+
+> db.Alunos.update(
+... {
+... "name": "Marcelo Stefanelli Santos"
+... },
+... {
+... $set: {
+... "NoSQL_note":5
+... }
+... }
+... )
+
+> db.Alunos.remove({"name":"Gilmar Meira Freitas"})
+
+
+
