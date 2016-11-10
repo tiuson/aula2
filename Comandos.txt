@@ -22,7 +22,7 @@
 ... "group": "Grupo 4"
 ... })
 
-> db.Alunos.find().sort({a: 1}).limit(1)
+> db.Alunos.find().sort({"birthday": 1}).limit(1)
 
 > db.Alunos.update(
 ... {
